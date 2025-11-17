@@ -1,0 +1,41 @@
+{
+  "scenarios": [
+    {
+      "id": "OZO_MULTI_2.1",
+      "initial_query": "오늘 우리 카테고리(50000000) 1위 트렌드 키워드로 홍보글 자동 생성해줘.",
+      "follow_up_queries": [
+        "좋아, 2. 카페에 올려줘."
+      ],
+      "task_description": "Multi-turn: 마케팅 자동화 (조건부 선택)",
+      "expected_tools_per_turn": [
+        ["get_top_shopping_trend"],
+        ["post_cafe_article"]
+      ],
+      "agentic_features": [
+        "조건부 Tool 선택 (Conditional Selection)",
+        "Solar의 콘텐츠 생성(Generation) 능력 활용",
+        "대화 맥락 기반 툴 결정 (블로그 vs 카페)"
+      ],
+      "include_error_recovery": false
+    },
+    {
+      "id": "OZO_MULTI_2.2",
+      "initial_query": "우리 신상품 'C상품(P789)' 전략 분석해줘. 키워드는 '울트라 웜 부츠'로 해.",
+      "follow_up_queries": [
+        "아, 그럼 '겨울 부츠'로 다시 분석해줘."
+      ],
+      "task_description": "Multi-turn: 트렌드 분석 실패 (오류 복구)",
+      "expected_tools_per_turn": [
+        ["analyze_product_strategy"],
+        ["analyze_product_strategy"]
+      ],
+      "agentic_features": [
+        "오류 복구 (Error Recovery)",
+        "오류 원인 분석 (No data found)",
+        "대안 제시 (다른 키워드 제안)",
+        "새 인자로 툴 재호출"
+      ],
+      "include_error_recovery": true
+    }
+  ]
+}

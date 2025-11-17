@@ -1,0 +1,30 @@
+{
+  "scenarios": [
+    {
+      "id": "OZO_SINGLE_1.1",
+      "user_query": "A상품(캠핑 의자) 재고랑 트렌드 지금 바로 분석하고, 분석 끝나는 대로 결과 요약해서 나한테 카톡으로 보내줘.",
+      "task_description": "Single-turn: 전략 분석 및 즉시 리포트 (Agentic Chain)",
+      "expected_tools": [
+        "analyze_product_strategy",
+        "alert_seller"
+      ],
+      "agentic_features": [
+        "순차적 툴 연계 (Agentic Chain)",
+        "툴 1의 Output을 가공하여 툴 2의 Input으로 사용"
+      ]
+    },
+    {
+      "id": "OZO_SINGLE_1.2",
+      "user_query": "A상품(캠핑 의자)이랑 B상품(게이밍 의자) 재고랑 트렌드 비교 분석해줘.",
+      "task_description": "Single-turn: 주력 상품 전략 비교 분석 (Comparative Analysis)",
+      "expected_tools": [
+        "analyze_product_strategy"
+      ],
+      "agentic_features": [
+        "병렬 Tool 호출",
+        "다중 대상 비교 분석",
+        "우선순위 판단 (재입고 vs 광고 조정)"
+      ]
+    }
+  ]
+}

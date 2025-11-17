@@ -1,0 +1,169 @@
+[
+  {
+    "scenario_id": "OZO_SINGLE_1.1",
+    "scenario_type": "single-turn",
+    "correct_function_name": true,
+    "valid_arguments": true,
+    "no_hallucinated_calls": true,
+    "pass": true,
+    "errors": [],
+    "total_tool_calls": 2,
+    "tool_results": [
+      {
+        "tool_name": "analyze_product_strategy",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 0
+      },
+      {
+        "tool_name": "alert_seller",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 1
+      }
+    ]
+  },
+  {
+    "scenario_id": "OZO_SINGLE_1.2",
+    "scenario_type": "single-turn",
+    "correct_function_name": true,
+    "valid_arguments": true,
+    "no_hallucinated_calls": true,
+    "pass": true,
+    "errors": [],
+    "total_tool_calls": 6,
+    "tool_results": [
+      {
+        "tool_name": "analyze_product_strategy",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 0
+      },
+      {
+        "tool_name": "analyze_product_strategy",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 1
+      },
+      {
+        "tool_name": "get_store_dashboard",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 2
+      },
+      {
+        "tool_name": "alert_seller",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 3
+      },
+      {
+        "tool_name": "post_blog_promotion",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 4
+      },
+      {
+        "tool_name": "post_cafe_article",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 5
+      }
+    ]
+  },
+  {
+    "scenario_id": "OZO_MULTI_2.1",
+    "scenario_type": "multi-turn",
+    "correct_function_name": true,
+    "valid_arguments": true,
+    "no_hallucinated_calls": true,
+    "pass": true,
+    "errors": [],
+    "total_tool_calls": 5,
+    "tool_results": [
+      {
+        "tool_name": "get_top_shopping_trend",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 0
+      },
+      {
+        "tool_name": "analyze_product_strategy",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 1
+      },
+      {
+        "tool_name": "alert_seller",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 2
+      },
+      {
+        "tool_name": "get_store_dashboard",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 3
+      },
+      {
+        "tool_name": "post_cafe_article",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 4
+      }
+    ]
+  },
+  {
+    "scenario_id": "OZO_MULTI_2.2",
+    "scenario_type": "multi-turn",
+    "correct_function_name": true,
+    "valid_arguments": true,
+    "no_hallucinated_calls": true,
+    "pass": true,
+    "errors": [],
+    "total_tool_calls": 4,
+    "tool_results": [
+      {
+        "tool_name": "analyze_product_strategy",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 0
+      },
+      {
+        "tool_name": "get_top_shopping_trend",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 1
+      },
+      {
+        "tool_name": "analyze_product_strategy",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 2
+      },
+      {
+        "tool_name": "analyze_product_strategy",
+        "correct_function_name": true,
+        "valid_arguments": true,
+        "errors": [],
+        "call_index": 3
+      }
+    ]
+  }
+]
